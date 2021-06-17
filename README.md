@@ -8,20 +8,23 @@ Body:
 
 ```json
 {
-  "name": "Pablo",
+  "name": "Bob",
   "age": "1",
   "breed": "Persian",
   "favFoods": [
     {
       "name": "chicken"
+    },
+    {
+      "name": "Cookies"
     }
   ]
 }
 ```
 
-Behaviour(it's saving the \_id):
+Behaviour(created the `objectId` and `_id` field):
 
-![](https://i.imgur.com/JJzV6M4.png)
+![](https://i.imgur.com/ichwIvg.png)
 
 ### Installation
 

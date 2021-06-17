@@ -1,6 +1,6 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document } from 'mongoose';
-import { Food } from './food.schema';
+import { Food, FoodSchema } from './food.schema';
 
 export type CatDocument = Cat & Document;
 
@@ -15,7 +15,7 @@ export class Cat {
   @Prop()
   breed: string;
 
-  @Prop([Food])
+  @Prop({ type: [FoodSchema] })
   favFoods: Food[]
 }
 

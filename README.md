@@ -1,13 +1,35 @@
 ### Mongoose sample
 
-### Installation
+### Test Data
 
+`POST https://localhost:3000/cats`
+
+Body:
+
+```json
+{
+  "name": "Pablo",
+  "age": "1",
+  "breed": "Persian",
+  "favFoods": [
+    {
+      "name": "chicken"
+    }
+  ]
+}
+```
+
+Behaviour(it's saving the \_id):
+
+![](https://i.imgur.com/JJzV6M4.png)
+
+### Installation
 
 `npm install`
 
 ### Running
 
-This example requires docker or a local mongodb installation.  If using a local mongodb, see `app.module.ts` for connection options, and make sure there are matching options for the mongodb installation and the source code.
+This example requires docker or a local mongodb installation. If using a local mongodb, see `app.module.ts` for connection options, and make sure there are matching options for the mongodb installation and the source code.
 
 #### Docker
 
@@ -24,4 +46,3 @@ After running the sample, you can stop the Docker container with
 Then, run Nest as usual:
 
 `npm run start`
-
